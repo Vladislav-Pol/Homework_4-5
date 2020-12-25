@@ -21,6 +21,10 @@ body{
 	background-size: cover;
 	background-position: 50%;
 	color: white;
+	margin: 0 5px;
+	font-family: arial;
+	font-size: 18px;
+
 }
 .float_left{
 	float: left;
@@ -69,11 +73,13 @@ footer .contact{
 .contact_info{
 	max-width: 70%;
 }
-nav a{
+nav a,
+nav a:visited{
 	all: unset;
 	display: inline-block;
 	padding: 10px;
 	width: 100%;
+	color: #fff;
 }
 nav li{
 	display: inline-block;
@@ -83,7 +89,7 @@ nav li{
 	width: 20%;
 }
 nav li:hover{
-	background: rgba(255,255,255,0.2);
+	background-color: rgba(255,255,255,0.2);
 }
 main{
 	min-height: calc(100vh - 280px); /*246 - высота header+nav+footer*/
@@ -91,9 +97,37 @@ main{
 h1{
 	text-align: center;
 	line-height: 2em;
+	font-size: 24px;
+	margin-bottom: 24px;
 }
 h2{
-	margin: 10px auto;
+	margin: 10px auto 24px;
+}
+p{
+	margin-bottom: 18px;
+}
+main .promo{
+	background-image: url(../img/yoga.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 120%;
+	background-position: 50%;
+	border: 2px solid #FFF;
+	/*vertical-align: middle;
+	text-align: center;*/
+	height: 400px;
+	color: #000;
+}
+main .promo div{
+	display: inline-block;
+	vertical-align: middle;
+}
+main .promo button{
+	font-size: 42px;
+	text-transform: uppercase;
+	border-radius: 30px;
+}
+.pictures img{
+	width: calc(25% - 4px);
 }
 footer{
 	margin: 10px auto;
